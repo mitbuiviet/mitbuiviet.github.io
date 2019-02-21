@@ -1,0 +1,221 @@
+
+
+.greetings{
+display: inline-block;
+width: 100%;
+background: linear-gradient(0.1turn, #404040, #a6a6a6, #d9d9d9);
+
+text-align: center;
+padding-top: 3%;
+padding-bottom: 10%;
+padding-left: 20%;
+color: white;
+animation: fadein 2s;
+
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.greetings h3{
+
+margin:10px;
+font-size: 150%;
+font-family:Ubuntu, serif;
+}
+
+
+
+.register{
+text-align: center;
+justify-content: center;
+display: inline-block;
+width: 100%;
+background-image:linear-gradient(141deg, #333333, #666666 10%, #bfbfbf);
+padding: 0 20px 40px 20px;
+
+opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+}
+
+input[type=submit]{
+text-align: center;
+margin-top: 5px;
+padding: 5px auto 5px auto;
+font-size: 130%;
+border-radius: 14px;
+font-family: "Alegreya Sans";
+}
+[type=submit]:hover{
+    transition: all 0.6s;
+    transform: scale(1.1);  
+}
+
+
+.register h3 {
+font-size: 200%;
+background-color: white;
+font-family: Ubuntu;
+padding: 5px;
+margin:50px 70px 60px 70px;
+border-radius: 5px;
+}
+
+#styletext {
+color:black;
+text-decoration: underline;
+text-decoration-color: red;
+font-size: 135%;
+font-family: Ubuntu;
+text-underline-position: under;
+}
+.postname #styletext{
+padding-left: 60%;
+
+}
+
+#email {
+    font-family:Ubuntu; 
+    text-align: center;
+}
+
+
+#abouttext {
+    font-family: "Alegreya Sans";
+    font-size: 160%;
+    padding:0 26% 0 26%;
+    line-height: 40px;
+    
+    
+    
+}
+
+#abouttext1 {
+    font-style: italic;
+    font-weight: 700;
+    
+}
+
+#abouttext2 {
+    color:tomato;
+    
+}
+
+#abouttextlink {
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+    font-style: italic;
+}
+
+#mynameintext {
+    font-family: ubuntu;
+    font-size: 90%;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+img{
+    width:100%;
+    margin:4px;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    border-radius: 2px;
+}
+
+.postname {
+    display: inline-block;
+    background-image:linear-gradient(141deg, #333333, #666666 10%, #bfbfbf);
+    padding:20px 0px 20px 40px;
+    width: 100%;
+    font-size: 150%;
+    color: white;
+    font-family: ubuntu;
+    
+}
+    
+
+img:hover{
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+.describe {
+    font-family: "Alegreya Sans";
+    font-size: 160%;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+}
+#styletext p{
+    text-align: right;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.fuckit input{
+   background-color: black!important;
+    
+    
+}
+
+#middletext {
+    text-align: center;
+    font-family: "Alegreya Sans";
+    font-size: 160%;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    margin: 40px;
+}
+.row{
+    margin: 20px 0 0 20px;
+    color: black;
+    font-size: 90%;
+    text-align:justify;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 1.5s;
+    margin: 40px;
+}
+#sign{
+margin-top: 20%;
+padding-right: 10%;
+color:black;
+text-align: right;
+text-decoration: underline;
+text-decoration-color: red;
+font-size: 135%;
+font-family: Ubuntu;
+text-underline-position: under;
+}
+
+
+.fuckit {
+   text-align: center;
+}
+
+
+
+
+.mc-field-group {
+    text-align: center !important;
+}
+
+
