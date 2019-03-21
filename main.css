@@ -121,7 +121,7 @@ padding-left: 60%;
 #abouttext {
     font-family: "Alegreya Sans";
     font-size: 160%;
-    padding:0 26% 0 26%;
+    padding:5% 26% 10% 26%;
     line-height: 40px;
     
     
@@ -276,10 +276,10 @@ text-underline-position: under;
     
 }
 #avatar2 {
-    width: 20%;
+    width: 30%;
     height: 20%;
-    border-radius: 45%;
-    border: 2px dashed black;  
+    border-radius: 50%;
+    margin: 5%;
 }
 
 
