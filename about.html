@@ -8,6 +8,9 @@
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        
+        
     <title></title>
     </head>
     <body>
@@ -47,15 +50,32 @@
   </div>
 </nav>
         
-    <div class="greetings">
+    <div class="about greetings">
         <h3 id="about">Hi there!<br> &nbsp;   This is about<br>&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <span id="styletext">thu bui</span></h3>
         </div>
-    
+    <div id="aboutavatar">
+        <img id="avatar2" src="pictures/avatar2.jpg"></div>
     <div class="about">
         <p id="abouttext">&nbsp; &nbsp; &nbsp; &nbsp; Saluton bonvenon al mia retejo.
             Mia nomo estas <span id="mynameintext">Bui V. T. Thu</span>, vivanta kaj studanta <span id="abouttext2"><strong>en Japanujo</strong></span>. <br><br>&nbsp; &nbsp; Mi estas memlernita <span id="abouttext1">retejo dev </span>kiu estas plej grava en ekonomio kaj komerco en <a id="abouttextlink" href="http://www.ynu.ac.jp/english/">Yokohama National University</a>, Japanujo.<br>
 <br>&nbsp; &nbsp; 
 Ĉi tio estas malgranda test-retejo. Mi esperas, ke vi ĝuu ĝin.</p>
+        </div>
+        
+<div class="aboutdetails"> 
+        <div class="studybackground jumbotron" style="background: linear-gradient(to bottom, #f0f0f0 0%, #deeaee 100%); border: 3px dashed black;">
+    
+    <h3 style="font-family: ubuntu;text-align: center;"> briefly about my academic background </h3>
+    <button data-toggle="collapse" data-target="#edutext" class="btn btn-dark">Details  ></button>
+    <h6>2015: High school graduation</h6> <p id="edutext" class=collapse  >graduated from Nguyen Binh Khiem high school for the gifted with <strong> highest prize</strong> in English proficiency contest city level. Top-class grades in <strong> Maths, English and CS</strong>.</p>
+    <h6>2016: Short course in Hochiminh</h6><p id=edutext class=collapse> short Japanese course in Hochiminh city, where I prepared in terms of Japanese and mentality for my study in Japan.</p>
+    <h6>2018: Intensive preparatory course in Yokohama</h6> <p id=edutext class=collapse> 2 year preparatory course in Yokohama for university entrance. Acquired <strong>JLPT N1</strong>, and <strong>EJU score of 690</strong>, and got admitted to <a class="font-italic text-dark" href="#" data-toggle="popover" title="university names" data-content="信州大学、横浜国立大学、埼玉大学">three national universities</a>.</p>        
+    <h6>Until now: Attending YNU as bachelor in Economics and Business</h6><p id=edutext class=collapse> student of Global Business and Economics Education Program in Yokohama National University. A member of YNU 105, a school-run international student support organization.</p>
+    </div>
+        
+        
+        
+        
         </div>
         
         
@@ -64,5 +84,10 @@
          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover(); 
+});
+</script>
     </body>
 </html>

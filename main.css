@@ -1,29 +1,58 @@
-
-
-.greetings{
-display: inline-block;
-width: 100%;
-background: linear-gradient(0.1turn, #404040, #a6a6a6, #d9d9d9);
-
-text-align: center;
-padding-top: 3%;
-padding-bottom: 10%;
-padding-left: 20%;
-color: white;
-animation: fadein 2s;
-
+.sticky {
+    position: fixed !important;
+    width: 100%;
+    z-index:9999;
 }
+.greetings img{
+    border-radius: 50%;
+    border: 2px dotted white;
+    
+}
+.greetings{
+text-align: center;
+margin-top: 0 !important;
+padding-bottom: 10px;
+
+
+color: whitesmoke;
+font-size: 130%;
+font-family:Ubuntu, serif;
+background: linear-gradient(0.1turn, #92919A, #a6a6a6, #d9d9d9);
+animation: fadein 2s;
+    
+}
+
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
-.greetings h3{
+.webtitle {
+text-align: right;
+padding-bottom: 10%;
+font-size: 130%;
+color: white;
 
-margin:10px;
-font-size: 150%;
-font-family:Ubuntu, serif;
 }
+
+.indexcontainer{
+    padding:10% 4% 3% 10%;
+    animation: fadein 2s;
+    
+}
+.indexcontainer h2{
+    font-family: ubuntu;
+    border-left: 6px solid red;
+}
+
+
+.arrow i:hover{
+   transform:rotate(45deg);
+  transition: all 0.6s;
+    
+}
+
 
 
 
@@ -32,7 +61,7 @@ text-align: center;
 justify-content: center;
 display: inline-block;
 width: 100%;
-background-image:linear-gradient(141deg, #333333, #666666 10%, #bfbfbf);
+background-image:linear-gradient(141deg, #92919A, #666666 10%, #bfbfbf);
 padding: 0 20px 40px 20px;
 
 opacity: 1;
@@ -84,6 +113,11 @@ padding-left: 60%;
 }
 
 
+
+
+
+
+
 #abouttext {
     font-family: "Alegreya Sans";
     font-size: 160%;
@@ -91,6 +125,14 @@ padding-left: 60%;
     line-height: 40px;
     
     
+    
+}
+#edutext{
+    font-family: "Alegreya Sans";
+    color: darkslategrey;
+    font-size: 130%;
+    padding:0 26% 0 26%;
+    line-height: 30px;
     
 }
 
@@ -118,7 +160,7 @@ padding-left: 60%;
     text-decoration: underline;
     text-decoration-color: red;
 }
-img{
+.container img{
     width:100%;
     margin:4px;
     opacity: 1;
@@ -134,9 +176,10 @@ img{
     background-image:linear-gradient(141deg, #333333, #666666 10%, #bfbfbf);
     padding:20px 0px 20px 40px;
     width: 100%;
-    font-size: 150%;
+    font-size: 3em;
     color: white;
-    font-family: ubuntu;
+    font-family: "the_woodlandsregular";
+    
     
 }
     
@@ -182,7 +225,7 @@ img:hover{
     animation-duration: 1.5s;
     margin: 40px;
 }
-.row{
+.container .row{
     margin: 20px 0 0 20px;
     color: black;
     font-size: 90%;
@@ -216,6 +259,27 @@ text-underline-position: under;
 
 .mc-field-group {
     text-align: center !important;
+}
+
+
+
+
+
+
+
+
+
+
+#aboutavatar{
+    text-align: center;
+    padding: 10px;
+    
+}
+#avatar2 {
+    width: 20%;
+    height: 20%;
+    border-radius: 45%;
+    border: 2px dashed black;  
 }
 
 
