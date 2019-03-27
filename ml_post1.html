@@ -1,0 +1,123 @@
+            <!DOCTYPE html>
+
+            <html>
+                <head>
+                    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+                    <link rel="stylesheet" href="main.css">
+                    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+                    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                   
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8">
+                    
+                    
+                    
+                    <title> About me</title>            
+                </head>
+                <body>
+                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">MitHome</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About me </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="register.html">Subscription</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Recent posts<span class="sr-only">(current)</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="triptogermany.html">Updating<span class="sr-only">(current)</span></a>
+              <a class="dropdown-item" href="https://mitpixelation.herokuapp.com/">Pixelation App</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="ml_post1.html">[Vietnamese]Giải thích máy học đơn giản</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Query</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+                    <div class="MLpostheader" style="font-family:'Alegreya Sans', sans-serif;">
+
+                    <div class="register" style="background: url(ml_post/mlback.png) no-repeat; background-size: 100%;padding: 50px; font-size: 120%"><h2 id=styletext>MACHINE LEARNING GIẢI THÍCH ĐƠN GIẢN</h2></div>
+                    <div style="background: url(ml_post/mlback2.png) no-repeat; background-size: 116%;">
+                        <p id="abouttext">   &nbsp;&nbsp;&nbsp;Trong bài viết có sử dụng một số ví dụ thực tiễn dựa trên máy học trong thường ngày. 
+                        <br>&nbsp;&nbsp; Vì mục đích nhằm đơn giản hoá để người mới dễ hiểu, bài viết không tránh khỏi thiếu sót. Hãy sử dụng bài viết như một chia sẻ tri thức chưa chuyên môn hoá về Machine Learning.</p>
+                        </div>
+                    </div>
+                    <div style="background: url(ml_post/mlback3.png) no-repeat; background-size: 50%">
+                    <h6 class="subtittle">I. Machine Learning là gì?</h6>
+                      <p id="progtext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Bạn có thể nhảy đến phần sau - các ví dụ thực tế)<br>
+&nbsp;&nbsp;&nbsp;Từ khoá Machine Learning (hay máy học, viết tắt ML) không còn lạ lẫm với giới trẻ có hứng thú về công nghệ nữa, mặc dù bạn có lẽ tiếp xúc với những câu chuyện về AI (trí tuệ nhân tạo)  nhiều hơn là ML. Điều cần chú ý: <i>ML là một nhánh của AI</i>.
+                          <br>&nbsp;&nbsp;&nbsp;
+ Machine Learning là quá trình để máy tính phân tích một nguồn dữ liệu (như chữ, số, hình ảnh, bất kì thông tin ở bất kì dạng nào) để tự nhận dạng, phát hiện, đánh giá phần thông tin có ích mà con người không thể dễ dàng làm được. Tất nhiên, con người có thể làm được điều này nhưng không hiệu quả và tốn nhân lực.
+</p>  
+                    </div>
+                    
+      <h6 class="subtittle">II. Một ví dụ ở ngân hàng</h6>
+                    <figure style="text-align: center;"><img src="ml_post/bankillu.jpg" height=auto width="70%" style="border-radius: 2%">
+                    <figcaption>Photo by Vlad Tchompalov on Unsplash</figcaption></figure>
+                      <p id="progtext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sau một vụ khủng bố lớn, chính phủ yêu cầu các ngân hàng hợp tác điều tra ngăn chặn con đường chi viện tài chính của các thành phần khủng bố.<b> Các kĩ sư thông tin sẽ tập hợp thông tin về hành vi rút thẻ của toàn bộ khách hàng, trong đó bao gồm cả những kẻ là khủng bố (đã phát hiện và làm rõ).</b> <br>
+                          &nbsp;&nbsp;&nbsp;Bằng Machine Learning, máy tính có thể <strong>nhận dạng hành vi đặc trưng </strong>của một khách hàng có khả năng là khủng bố, ví dụ các nguồn thu thường không thường xuyên như tiền lương hàng tháng mà sẽ tập trung vào một hai đợt và số tiền thường lớn, một số đặc trưng về tên họ, thời gian rút tiền,... 
+                          <br>&nbsp;&nbsp;&nbsp;
+ Công việc này rất khó cho con người làm vì lượng thông tin rất lớn và bao hàm lớn các thông tin con phức tạp hơn (thời gian tạo tài khoản, thời gian không sử dụng, số lần rút tiền ở ATM, số lần rút tiền ở tạp hoá,…). Một mô hình Machine Learning tốt sẽ xử lí rất <i>nhiều loại thông tin cùng lúc và sử dụng ít thời gian hơn.</i>
+</p>  
+                    <h6 class="subtittle">III. Một ví dụ khi xem phim online </h6>
+                      <p id="progtext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dựa vào nguồn thông tin review khổng lồ của khách hàng, máy tính có thể phát hiện và giới thiệu một bộ phim bạn có thể thích. Làm sao được? Có nhiều mô hình ML cho công cụ này, một trong số đó gọi là <b>object-based</b>: <i>dựa vào độ tương tự về rating của một cặp phim mà xếp loại thứ tự độ giống nhau</i> (về đề tài hay thể loại). <br>
+&nbsp;&nbsp;&nbsp;Phương pháp này tìm ra độ tương đồng của hai bộ phim khác nhau mà không phụ thuộc trực tiếp vào thay đổi thị hiếu của khách hàng. Có nghĩa rằng, dù khách hàng thay đổi thói quen xem phim hay sở thích, độ tương đồng của hai bộ phim vẫn không thay đổi.
+                          <br>&nbsp;&nbsp;&nbsp;
+ Một phương pháp ít phổ biến hơn là<b> user-based</b>. Ví dụ, trong kho tàng dữ liệu quan sát được có 500 người đã xem phim X, phim Y và phim Z và đánh giá phim lần lượt trung bình trên khung 10 điểm là  X: 8.5 điểm, Y: 8 điểm, Z: 9 điểm. Điều này có nghĩa: nếu bạn xem phim X, phim Y và đánh giá lần lượt 7 điểm và 9 điểm (đánh giá cao) thì máy sẽ giới thiệu cho bạn phim Z vì máy nghĩ bạn có cùng sở thích với 500 người ở trên. Thực tế phương pháp này ít chuộng vì <b>sở thích của khách hàng khá đa dạng, khó đoán và thay đổi thường xuyên</b>.
+</p>  
+                    <h6 class="subtittle">IV. Một ví dụ với chụp hình tự sướng</h6>
+                      <p id="progtext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Làm sao smartphone có thể nhận dạng khuôn mặt để tập trung tiêu cự và áp dụng hiệu ứng xoá muộn? Mô hình ML để nhận dạng gương mặt giải thích đơn giản như sau: <b> Thu thập hàng triệu hình ảnh, lẫn trong số đó là hình ảnh có mặt người và hình ảnh không có mặt người. Cho máy chạy phân tích tất cả hình ảnh để tìm ra.</b></p>
+                    <figure style="text-align: center;"><img src="ml_post/facerecog.png" height=auto width="70%" style="border-radius: 2%">
+                    <figcaption>Stockphoto</figcaption></figure>
+                          <p id="progtext">
+                        
+&nbsp;&nbsp;&nbsp;Nói một cách khác: cho máy tính tiếp xúc với thật nhiều hình ảnh có mặt người để <strong>máy tính làm quen với nó bằng cách tìm ra các quy tắc, hoạ tiết thường thấy</strong> ở một gương mặt người, đồng thời cho máy nhận ra điểm khác biệt với các vật thế khác bằng các hình ảnh không liên quan đến mặt người. 
+                          <br>&nbsp;&nbsp;&nbsp;
+ Điều tương tự với nhận diện vật thể bất kì, ta cần chuẩn bị một nguồn thông tin khá lớn để cho vào máy để máy có thể “học”. Sau quá trình học (training) thì thường ta sẽ đánh giá độ chính xác của các dự đoán, trong một phương pháp bổ trợ, nếu máy đoán trúng thì bỏ qua, nếu đoán sai thì trừ điểm/phạt, cứ như thế máy sẽ tiếp tục học qua feedback. 
+</p>  
+                    
+     
+                     <h6 class="subtittle">IV.	Một lần nữa, Machine Learning là gì?</h6>
+                      <p id="progtext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Là công nghệ khai thác thông tin có ích dựa trên sự học tập của máy trên một nguồn dữ liệu có sẵn.<br>
+&nbsp;&nbsp;&nbsp;Tuỳ vào mục đích mà cách thức các kĩ sư thông tin train máy cũng khác nhau. Điều cốt yếu để một mô hình ML đưa ra kết quả đáng tin là nguồn thông tin khổng lồ. 
+</p>  
+
+                     <h6 class="subtittle">VI. Muốn thực hành một dự án Machine Learning thì cần gì</h6>
+                    <figure style="text-align: center;"><img src="ml_post/analysis.jpg" height=auto width="70%" style="border-radius: 2%">
+                    <figcaption>Photo from Unsplash</figcaption></figure>
+                      <p id="progtext">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Một nguồn data đủ lớn để train mô hình ML ta tạo ra. Nếu là Big Data (nguồn data thực sự lớn và khó quản lí trên một máy tính) thì cần một môi trường máy tính đủ mạnh hay một nhóm máy tính .<br>
+                          &nbsp;&nbsp;&nbsp;Tiếp theo, kiến thức thống kê học tuỳ vào project mà mảng kiến thức cần khác nhau + Kĩ năng xử lí dữ liệu. Có rất nhiều công cụ để thực hiện tác vụ này, sử dụng ngôn ngữ lập trình Python để sử dụng các thư viện liên quan (<strong>như Pandas, Skilearn</strong>) cũng là một cách.
+
+                          <br>&nbsp;&nbsp;&nbsp;
+ Phần còn lại là dịch và đánh giá kết quả. Thường thì trong một dự án ML thì 20% công việc là coding, 80% còn lại dùng để làm sạch nguồn dữ liệu, điều chỉnh mô hình cho máy có thể chạy được mà không dính bug. 
+</p>  
+                    <p style="font-size: 100%; padding: 0 20%; margin-top: 30px"> Ở bài viết tiếp theo sẽ mô tả một thực hành Machine Learning bằng Python về phát hiện ác tính ở ngực phụ nữ qua nguồn data chụp tuyến vú.</p>
+                    
+                    <p id="sign">mit bui</p>
+
+
+
+
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+                </body>
+
+            </html>

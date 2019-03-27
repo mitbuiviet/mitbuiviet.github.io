@@ -128,15 +128,15 @@ padding-left: 60%;
     font-family: "Alegreya Sans";
     color: darkslategrey;
     font-size: 130%;
-    padding:0 26% 0 26%;
-    line-height: 30px;
+    padding:0 15% 0 15%;
+    line-height: 25px;
     
 }
 #progtext{
     font-family: "Alegreya Sans";
     color: darkslategrey;
     font-size: 130%;
-    padding:0 26% 0 26%;
+    padding:0 15% 0 15%;
     line-height: 30px;
 }
 #abouttext1 {
@@ -218,15 +218,16 @@ img:hover{
 }
 
 #middletext {
-    text-align: center;
+    text-align: left;
     font-family: "Alegreya Sans";
-    font-size: 160%;
+    font-size: 24px;
     opacity: 1;
+    padding: 0 15% 0 15%;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
     animation-duration: 1.5s;
-    margin: 40px;
+    margin: 50px 0;
 }
 .container .row{
     margin: 20px 0 0 20px;
@@ -292,4 +293,15 @@ text-underline-position: under;
 }
 #najapicture:hover{
     transform:none;
+}
+
+
+
+
+
+
+
+.subtittle {
+    margin-left: 2%;
+    font-size: 120%;
 }
