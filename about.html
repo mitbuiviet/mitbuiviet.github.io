@@ -9,7 +9,9 @@
             <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
             <link rel="stylesheet" href="hover.scss">
-
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+            
+            <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
 
         <title>About me</title>
         </head>
@@ -49,7 +51,7 @@
     </nav>
 
         <div class="about greetings">
-            <h3 id="about">Hi there!<br> &nbsp;   This is about<br>&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <span id="styletext">thu bui</span></h3>
+            <h3  id="about">Hi there!<br> &nbsp;   This is about<br>&nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  <span id="styletext">thu bui</span></h3>
             </div>
             <div class="row avabox" style="text-align: center;">
         <div id="aboutavatar" class="col">
@@ -58,11 +60,11 @@
             <img id="najapicture" src="pictures/naja.png"></div>
                 </div>
             
-        
+       
 
             
-        <div class="about">
-            <p id="abouttext" class="esperanto1">&nbsp; &nbsp; &nbsp; &nbsp; Hi there! You are going to read a brief story about me.
+        <div class="about wow fadeInUp">
+            <p class="wow rollIn slow" id="abouttext" class="esperanto1">&nbsp; &nbsp; &nbsp; &nbsp; Hi there! You are going to read a brief story about me.
                 My name is <span id="mynameintext">Bùi Việt Thiện Thư</span>, from Vietnam, living and studying <span id="abouttext2"><strong>in Japan</strong></span>. <br><br>&nbsp; &nbsp; I am a wannabe<span id="abouttext1"> &nbsp; data scientist &nbsp; </span> who is of Economics and Business major in <a id="abouttextlink" href="http://www.ynu.ac.jp/english/">Yokohama National University</a>, Japan.<br>
     <br>&nbsp; &nbsp; 
     This is my test website. I hope you enjoy browsing around. With love.</p>
@@ -71,39 +73,39 @@
     <div class="aboutdetails"> 
             <div class="studybackground jumbotron" style="border-top:3px dashed black; background: url(pictures/owl.jpg) no-repeat; background-size: 100%; margin: auto 20px">
 
-        <h3 style="font-family: ubuntu;text-align: center;"> Briefly about my academic background </h3>
+        <h3 class="wow rollIn" style="font-family: ubuntu;text-align: center;"> Briefly about my academic background </h3>
         <button data-toggle="collapse" data-target="#edutext" class="btn btn-dark" style="margin: 2%;">Details  ></button>
-        <h6 style="margin-left: 10%">2015: High school graduation</h6> <p id="edutext" class=collapse  >graduated from Nguyen Binh Khiem high school for the gifted with <strong> highest prize</strong> in English proficiency contest city level. Top-class grades in <strong> Maths, English and CS</strong>.</p>
-        <h6 style="margin-left: 10%">2016: Short course in Hochiminh</h6><p id=edutext class=collapse> short Japanese course in Hochiminh city, where I prepared in terms of Japanese and mentality for my study in Japan.</p>
-        <h6  style="margin-left: 10%">2018: Intensive preparatory course in Yokohama</h6> <p id=edutext class=collapse> 2 year preparatory course in Yokohama for university entrance. Acquired <strong>JLPT N1</strong>, and <strong>EJU score of 690</strong>, and got admitted to <a class="font-italic text-dark" data-toggle="tooltip" title="信州大学、横浜国立大学、埼玉大学">three national universities</a>.</p>        
-        <h6  style="margin-left: 10%">Until now: Attending YNU as bachelor in Economics and Business</h6><p id=edutext class=collapse> student of Global Business and Economics Education Program in Yokohama National University. Also a member of YNU 105, a school-run international student support organization.</p>
+        <h6 class="wow fadeInRight" style="margin-left: 10%">2015: High school graduation</h6> <p id="edutext" class=collapse  >graduated from Nguyen Binh Khiem high school for the gifted with <strong> highest prize</strong> in English proficiency contest city level. Top-class grades in <strong> Maths, English and CS</strong>.</p>
+        <h6 class="wow fadeInRight" style="margin-left: 10%">2016: Short course in Hochiminh</h6><p id=edutext class=collapse> short Japanese course in Hochiminh city, where I prepared in terms of Japanese and mentality for my study in Japan.</p>
+        <h6 class="wow fadeInRight" style="margin-left: 10%">2018: Intensive preparatory course in Yokohama</h6> <p id=edutext class=collapse> 2 year preparatory course in Yokohama for university entrance. Acquired <strong>JLPT N1</strong>, and <strong>EJU score of 690</strong>, and got admitted to <a class="font-italic text-dark" data-toggle="tooltip" title="信州大学、横浜国立大学、埼玉大学">three national universities</a>.</p>        
+        <h6  class="wow fadeInRight" style="margin-left: 10%">Until now: Attending YNU as bachelor in Economics and Business</h6><p id=edutext class=collapse> student of Global Business and Economics Education Program in Yokohama National University. Also a member of YNU 105, a school-run international student support organization.</p>
         </div>
 
             <div class="programbackground jumbotron">
-        <h3 style="font-family: ubuntu;text-align: center; margin-bottom: 5%;"> About my programming hobby </h3>
-       <h6   style="margin-left: 10%">My first real attempt </h6> <p id="progtext">&nbsp; &nbsp; dates back to my first year in YNU. I started learning Python after reading a few books on Machine Learning, Algorithms. </p>
-                <p id="progtext">  &nbsp; &nbsp;  This means that I started out programming not for game making, web app, but for machine learning models instead. </p>
-    <h6  style="margin-left: 10%">Me and Machine Learning</h6>
-                <p id="progtext"> &nbsp; &nbsp;  I enjoyed learning about making models with various classifiers to<i> cluster, identify and predict</i> based on data supplies.</p>
-                <p id="progtext">&nbsp; &nbsp;  I finished a <a href="https://www.udemy.com/data-science-and-machine-learning-with-python-hands-on/learn/v4/overview" style="">course on Udemy</a> about Machine Learning and I feel much excited to understand pretty many new concepts regarding machine learning and AI.</p>
-        <h6  style="margin-left: 10%">Programming as a learner</h6>
-                <p id="progtext">&nbsp; &nbsp;  I learned using various libraries such as <strong>OpenCV</strong> for picture/video processings,<strong>Pandas, Bokeh and Matlotlib</strong> for data visualization. </p>
-                <p id="progtext">&nbsp; &nbsp;  For data scrapping I am used to <b>Beautiful Soup </b>.&nbsp; &nbsp;  I usually use this when building app for real estate data collection, together with <strong>PostGreSQL</strong> for database managing and auto-mailing.  </p>
-                <p id="progtext"> &nbsp; &nbsp; I also enjoy experimenting object detection with model files from <strong><a href="https://imageai.readthedocs.io/en/latest/">ImageAI</a> and <a href="https://github.com/opencv/opencv/tree/master/data/haarcascades">OpenCV(HaarCascade)</a></strong>.  </p>
+        <h3 class="wow fadeInRight" style="font-family: ubuntu;text-align: center; margin-bottom: 5%;"> About my programming hobby </h3>
+       <h6 class="wow fadeInRight"  style="margin-left: 10%">My first real attempt </h6> <p class="wow fadeInRight"id="progtext">&nbsp; &nbsp; dates back to my first year in YNU. I started learning Python after reading a few books on Machine Learning, Algorithms. </p>
+                <p class="wow fadeInRight" id="progtext">  &nbsp; &nbsp;  This means that I started out programming not for game making, web app, but for machine learning models instead. </p>
+    <h6 class="wow fadeInRight" style="margin-left: 10%">Me and Machine Learning</h6>
+                <p class="wow fadeInRight" id="progtext"> &nbsp; &nbsp;  I enjoyed learning about making models with various classifiers to<i> cluster, identify and predict</i> based on data supplies.</p>
+                <p class="wow fadeInRight" id="progtext">&nbsp; &nbsp;  I finished a <a href="https://www.udemy.com/data-science-and-machine-learning-with-python-hands-on/learn/v4/overview" style="">course on Udemy</a> about Machine Learning and I feel much excited to understand pretty many new concepts regarding machine learning and AI.</p>
+        <h6 class="wow fadeInRight"  style="margin-left: 10%">Programming as a learner</h6>
+                <p class="wow fadeInRight" id="progtext">&nbsp; &nbsp;  I learned using various libraries such as <strong>OpenCV</strong> for picture/video processings,<strong>Pandas, Bokeh and Matlotlib</strong> for data visualization. </p>
+                <p class="wow fadeInRight" id="progtext">&nbsp; &nbsp;  For data scrapping I am used to <b>Beautiful Soup </b>.&nbsp; &nbsp;  I usually use this when building app for real estate data collection, together with <strong>PostGreSQL</strong> for database managing and auto-mailing.  </p>
+                <p class="wow rollIn" id="progtext"> &nbsp; &nbsp; I also enjoy experimenting object detection with model files from <strong><a href="https://imageai.readthedocs.io/en/latest/">ImageAI</a> and <a href="https://github.com/opencv/opencv/tree/master/data/haarcascades">OpenCV(HaarCascade)</a></strong>.  </p>
 
-                <p id="progtext">&nbsp; &nbsp;<a href="https://mitpixelation.herokuapp.com/" >Here</a> is my one example web application on Heroku platform, employing OpenCV library.</p>
+                <p class="wow flip" id="progtext" style="border-bottom: 1px dashed white">&nbsp; &nbsp;<a href="https://mitpixelation.herokuapp.com/" >Here</a> is my one example web application on Heroku platform, employing OpenCV library.</p>
         </div>
-            <div class="linguistic jumbotron" style="border-top:3px dashed black; background: url(pictures/linguistic.png) no-repeat; background-size: 100%; margin: auto 20px">
-        <h3 style="font-family: ubuntu;text-align: center; margin-bottom: 5%;"> My linguistic side </h3>
-            <h6  style="margin-left: 10%">Vietnamese - my soul language </h6>
-                <p id="progtext">&nbsp; &nbsp; Yes, it is my mother language as well. I always try to speak the <i>truest and purest </i> form of Vietnamese, by which I mean the least foreign words (conservatively) and no swearwords.<a data-toggle="collapse" data-target="#vietnamese" style=" color: cornflowerblue; margin-left: 5%; font-size: 80%;">show more</a>
+            <div class="linguistic jumbotron " style="border-top:3px dashed black; background: url(pictures/linguistic.png) no-repeat; background-size: 100%; margin: auto 20px">
+        <h3 class="wow fadeInUp" style="font-family: ubuntu;text-align: center; margin-bottom: 5%;"> My linguistic side </h3>
+            <h6 class="wow fadeInUp" style="margin-left: 10%">Vietnamese - my soul language </h6>
+                <p class="wow fadeInUp" id="progtext">&nbsp; &nbsp; Yes, it is my mother language as well. I always try to speak the <i>truest and purest </i> form of Vietnamese, by which I mean the least foreign words (conservatively) and no swearwords.<a data-toggle="collapse" data-target="#vietnamese" style=" color: cornflowerblue; margin-left: 5%; font-size: 80%;">show more</a>
                 </p>
                 <div id="vietnamese" class="collapse">
 
             <p id="progtext">&nbsp; &nbsp; I am also quite proud of my <b>adaptability</b> in Vietnamese, the ability to switch both in spoken and listening form to the speaker's accent (Northern, Southern, Central or especially Hue's)</p></div>
 
-            <h6  style="margin-left: 10%">English of daily and academic fluency </h6>
-                <p id="progtext">
+            <h6 class="wow fadeInUp" style="margin-left: 10%">English of daily and academic fluency </h6>
+                <p class="wow fadeInUp" id="progtext">
     &nbsp; &nbsp; Most of my intellectual thinkings and philosophy formed from a plethora of readings and references in the English language. I am a great fan of <a href="http://freakonomics.com/" >Freakonomics</a>, by the way.<a data-toggle="collapse" data-target="#englishlanguage" style=" color: cornflowerblue; margin-left: 5%; font-size: 80%;">show more</a></p>
                 <div class="collapse" id="englishlanguage">
 
@@ -111,10 +113,10 @@
                     </div>
 
 
-            <h6  style="margin-left: 10%">Deutsch made-soft for <span id="germantext" style="background:linear-gradient(to right, black 0,  33%,red  33%, 66%, #e6e600 66%, #e6e600 100%);-webkit-background-clip: text;
+            <h6 class="wow fadeInUp" style="margin-left: 10%">Deutsch made-soft for <span id="germantext" style="background:linear-gradient(to right, black 0,  33%,red  33%, 66%, #e6e600 66%, #e6e600 100%);-webkit-background-clip: text;
       -webkit-text-fill-color: transparent; color: skyblue">German </span></h6>
-                <div class="german" style="background: url(pictures/german.png) no-repeat; background-size: 100%;">
-            <p id="progtext">&nbsp; &nbsp; Why made soft? German language (of German people) is, as a cliché, rumored to sound harsh and überstrong compared to other some european peers like Français or Italiano.<a data-toggle="collapse" data-target="#germanlanguage" style=" color: cornflowerblue; margin-left: 5%; font-size: 80%;">my learning and tips</a></p>
+                <div class="german wow fadeInUp" style="background: url(pictures/german.png) no-repeat; background-size: 100%;">
+            <p class="wow fadeInUp" id="progtext">&nbsp; &nbsp; Why made soft? German language (of German people) is, as a cliché, rumored to sound harsh and überstrong compared to other some european peers like Français or Italiano.<a data-toggle="collapse" data-target="#germanlanguage" style=" color: cornflowerblue; margin-left: 5%; font-size: 80%;">my learning and tips</a></p>
                     <div class="collapse"
      id="germanlanguage">                <p id="progtext">&nbsp; &nbsp;  I started off learning German my second year in Japan. It was highly enjoyable to learn German in Japan with <b>help solely from the Internet</b>.
     Of course, I had language partners vie <a href="https://www.italki.com/">Italki </a>but my German improves mostly from active learning through videos on YouTube. </p>
@@ -124,9 +126,9 @@
                     <p id="progtext">&nbsp;   German is so important to me since it marks my first self-study success when it comes to foreign language.</p>
                     </div>
                     </div>
-            <div class="japanese" style="background: url(pictures/japanese.png) no-repeat; background-size: 100%;">
-                <h6  style="margin-left: 10%"><span style="background: url(pictures/japanflat.png) no-repeat; background-size:100%">日本語</span> the angelic Japanese language</h6>
-                <p id="progtext">&nbsp; &nbsp; My road to Japanese commences out of <i>painful irrationality</i>. Later on, it became the required, instead of a choice.<a data-toggle="collapse" data-target="#japanese" style=" color: cornflowerblue; margin-left: 5%; font-size: 80%;">uhhh... angelic?</a></p>
+            <div class="wow fadeInUp japanese" style="background: url(pictures/japanese.png) no-repeat; background-size: 100%;">
+                <h6 class="wow fadeInUp" style="margin-left: 10%"><span style="background: url(pictures/japanflat.png) no-repeat; background-size:100%">日本語</span> the angelic Japanese language</h6>
+                <p class="wow fadeInUp" id="progtext">&nbsp; &nbsp; My road to Japanese commences out of <i>painful irrationality</i>. Later on, it became the required, instead of a choice.<a data-toggle="collapse" data-target="#japanese" style=" color: cornflowerblue; margin-left: 5%; font-size: 80%;">uhhh... angelic?</a></p>
                     <div class="collapse"
      id="japanese">              
                         <p id="progtext">&nbsp; &nbsp;  Yes, it is angelic. I am talking about how beautiful it sounds, and the way people connect it to plenty of lovely cheesy things like Sakura, anime, cute kitty. Moreover, it is angelic in the way that its grammar is godly difficult plus thousand of Kanjis which are pronounced in irregular manners. And unfortunately, <b>Kanji learning is a must.</b> </p>
@@ -151,6 +153,10 @@
       $('[data-toggle="tooltip"]').tooltip(); 
     });
     </script>
+            
+<script>
+new WOW().init();
+</script>
 
         </body>
     </html>
