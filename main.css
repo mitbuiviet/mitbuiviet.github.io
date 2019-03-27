@@ -60,11 +60,7 @@ display: inline-block;
 width: 100%;
 
 padding: 0 20px 40px 20px;
-opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-    animation-duration: 1.5s;
+
 }
 
 input[type=submit]{
@@ -163,11 +159,6 @@ padding-left: 60%;
 .container img{
     width:100%;
     margin:4px;
-    opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-    animation-duration: 1.5s;
     border-radius: 2px;
 }
 
@@ -191,23 +182,12 @@ img:hover{
 .describe {
     font-family: "Alegreya Sans";
     font-size: 160%;
-    opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-    animation-duration: 1.5s;
+    
 }
 #styletext p{
     text-align: right;
 }
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
+
 .fuckit input{
    background-color: black!important;
     
@@ -218,12 +198,7 @@ img:hover{
     text-align: left;
     font-family: "Alegreya Sans";
     font-size: 24px;
-    opacity: 1;
     padding: 0 15% 0 15%;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-    animation-duration: 1.5s;
     margin: 50px 0;
 }
 .container .row{
@@ -231,11 +206,6 @@ img:hover{
     color: black;
     font-size: 90%;
     text-align:justify;
-    opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-    animation-duration: 1.5s;
     margin: 40px;
 }
 #sign{
