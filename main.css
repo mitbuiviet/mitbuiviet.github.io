@@ -272,3 +272,13 @@ text-underline-position: under;
     margin-left: 10%;
     font-size: 120%;
 }
+
+#code {
+    margin: 0 20%;
+    padding: 5px;
+    font-size: 90%;
+    font-family: sans-serif;
+    background-color: #001a33;
+    color: whitesmoke;
+    
+}
