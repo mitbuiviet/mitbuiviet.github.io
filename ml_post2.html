@@ -66,38 +66,38 @@ Chụp nhũ ảnh hay mammography là một công nghệ phát hiện mầm bệ
                         </div>
 <h6 class="subtittle wow fadeInLeft"> I.	Phân tích các đặc tính/thuộc tính của dữ liệu:</h6>
             
-            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Số lượng: 961 mẫu. Trong đó 516  lành tính, 445 ác tính.
+            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Số lượng: <span id=highlight>961 mẫu</span>. Trong đó <span id="highlight">516  lành tính</span>, <span id="highlight">445 ác tính</span>.
 Thuộc tính: 6 thuộc tính. Trong đó, 1 thuộc tính kiểm chứng kết quả, 1 thuộc tính không mang tính dự đoán, 4 thuộc tính mang tính dự đoán. Cụ thể như sau:
 </p>
             
-            <p class="wow fadeInUp jumbotron">1) BI-RADS assessment:  chỉ độ tự tin của kết quả chẩn đoán, thông tin này không ảnh hưởng đến kết quả của project nên không được cho bộ data để train. Tóm lại, bỏ qua thuộc tính này.<br>
-2) Tuổi của bệnh nhân: số nguyên.<br>
-3) Hình dạng: hình dạng của vú, biểu hiện ở 1 trong 4 phân loại (1: round, 2:oval, 3:lobular, 4:irregular)<br>
-4) Rìa ngoài :chỉ dạng của vú nhìn từ ngang, biểu hiện ở 1 trong 5 trạng thái (1:circumscribed, 2:microlobulated, 3:obscuted, 4:ill-defined, 5:spiculated).<br>
-5) Mật độ: chất lượng của khối vú, biểu hiện ở 1 trong 4 phân loại (1: high, 2: iso, 3: low, 4: fat-containing)<br>
-6) Mức nghiêm trọng (thuộc tính mục tiêu): 1: ác tính, 2: lành tính.
+            <p class="wow fadeInUp jumbotron" style="padding-left: 10%"><span id="highlight2">1) BI-RADS assessment</span>:  chỉ độ tự tin của kết quả chẩn đoán, thông tin này không ảnh hưởng đến kết quả của project nên không được cho bộ data để train. Tóm lại, bỏ qua thuộc tính này.<br>
+                <span id="highlight2">2) Tuổi của bệnh nhân</span>: số nguyên.<br>
+                <span id="highlight2">3) Hình dạng</span>: hình dạng của vú, biểu hiện ở 1 trong 4 phân loại (1: round, 2:oval, 3:lobular, 4:irregular)<br>
+                <span id="highlight2">4) Rìa ngoài</span> :chỉ dạng của vú nhìn từ ngang, biểu hiện ở 1 trong 5 trạng thái (1:circumscribed, 2:microlobulated, 3:obscuted, 4:ill-defined, 5:spiculated).<br>
+                <span id="highlight2">5) Mật độ</span>: chất lượng của khối vú, biểu hiện ở 1 trong 4 phân loại (1: high, 2: iso, 3: low, 4: fat-containing)<br>
+                <span id="highlight2">6) Mức nghiêm trọng (thuộc tính mục tiêu)</span>: 1: ác tính, 2: lành tính.
 </p>
             
             <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Tuy nhiên, trong quá trình thu thập dữ liệu sẽ có thiếu sót, dẫn đến một vài mẫu sẽ không có thông tin ở một số thuộc tính. Cụ thể:
             </p>
-            <p class="wow fadeInUp jumbotron">
-1>	BI-RADS assessment: 2 giá trị<br>
-2>	Tuổi: 5 giá trị<br>
-3>	Hình dạng: 31 giá trị<br>
-4>	Margin: 48 giá trị<br>
-5>	Mật độ: 76 giá trị<br>
-6>	Thuộc tính mục tiêu: đầy đủ.
+            <p class="wow fadeInUp jumbotron" style="padding-left: 10%;">
+1)	BI-RADS assessment: 2 giá trị<br>
+2)	Tuổi: 5 giá trị<br>
+3)	Hình dạng: 31 giá trị<br>
+4)	Margin: 48 giá trị<br>
+5)	Mật độ: 76 giá trị<br>
+6)	Thuộc tính mục tiêu: đầy đủ.
 </p>
 <h6 class="subtittle wow fadeInLeft"> II.	Hiểu thông tin của bộ dữ liệu:</h6>
-            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Thuộc tính kiểm chứng, hay gọi là thuộc tính mục tiêu, mang 2 loại :ác tính/ lành tính. Mục tiêu của project là để phân loại (nói đúng hơn là dự đoán) một mẫu nhũ ảnh bất kì vào nhóm lành tính hoặc ác tính dựa vào 4 thuộc tính mang tính dự đoán (Tuổi, hình dạng, rìa ngoài, mật độ).</p>
+            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Thuộc tính kiểm chứng, hay gọi là thuộc tính mục tiêu, mang 2 loại :ác tính/ lành tính. <span id="highlight">Mục tiêu của project là để phân loại (nói đúng hơn là dự đoán) một mẫu nhũ ảnh bất kì vào nhóm lành tính hoặc ác tính dựa vào 4 thuộc tính mang tính dự đoán (Tuổi, hình dạng, rìa ngoài, mật độ).</span></p>
             <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Vì các giá trị bị thiếu sẽ ảnh hưởng đến quá trình máy học nên sẽ phải được xử lí trước khi cho vào mô hình. Cụ thể sẽ được giải thích ở thực hành.</p>
             
 <h6 class="subtittle wow fadeInLeft">III.	Các bước thực hành project:</h6>
-            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;1.	Chuẩn bị dữ liệu: Bước này ta chỉnh sửa dữ liệu sao cho máy có thể đọc được. Chẳng hạn thay vì để các thuộc tính ở dạng nguyên văn như cao-vừa-thấp, thì ta đưa về số 1-2-3 để máy đọc được dễ hơn. Mục tiêu của bước này là sau cùng ta có bộ 2 bộ dữ liệu X, và Y. Bộ X là dữ liệu chứa các thuộc tính mang tính dự đoán. Bộ Y là bộ dữ liệu chứa mỗi thông tin đích (lành tính, ác tính). Machine Learning sau cùng dùng để phân tích dữ liệu X để dự đoán Y.
+            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;<span id="highlight2">1.	Chuẩn bị dữ liệu</span>: Bước này ta chỉnh sửa dữ liệu sao cho máy có thể đọc được. Chẳng hạn <span style="font-style:oblique">thay vì để các thuộc tính ở dạng nguyên văn như cao-vừa-thấp, thì ta đưa về số 1-2-3 để máy đọc được dễ hơn</span>. Mục tiêu của bước này là sau cùng ta có bộ 2 bộ dữ liệu X, và Y. <span id="highlight">Bộ X là dữ liệu chứa các thuộc tính mang tính dự đoán. Bộ Y là bộ dữ liệu chứa mỗi thông tin đích (lành tính | ác tính)</span>. Machine Learning sau cùng dùng để phân tích dữ liệu X để dự đoán Y.
 Ngoài ra, để tăng độ chính xác và độ tin cậy của mô hình, ta sẽ tăng số lượng mẫu lên bằng cách xáo trộn ngẫu nhiên thành các bộ nhỏ, hay chia bộ data thành 2 bộ để train và để test.
 </p>
-            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;2.	Nạp thông tin vào mô hình: nạp bộ X và Y ở trên vào máy, sử dụng nhiều phương pháp Machine Learning khác nhau để tìm ra phương pháp cho ra độ chính xác cao nhất.</p>
-            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;3.	Đánh giá và chọn ra mô hình mạnh nhất, tức có độ chính xác cao nhất.
+            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;<span id="highlight2">2.	Nạp thông tin vào mô hình</span>: nạp bộ X và Y ở trên vào máy, sử dụng nhiều phương pháp Machine Learning khác nhau để tìm ra phương pháp cho ra độ chính xác cao nhất.</p>
+            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;<span id="highlight2">3.	Đánh giá</span> và chọn ra mô hình mạnh nhất, tức có độ chính xác cao nhất.
 </p>
             
             
@@ -106,29 +106,29 @@ Ngoài ra, để tăng độ chính xác và độ tin cậy của mô hình, ta
             
             <figure style="text-align: center"><img class="wow rollIn" src="ml_post2/step1.png" height=auto width="65%"></figure>
             <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Các cột dọc lần lượt là các thuộc tính. Thuộc tính cuối cùng (severity) sẽ là đích, phân thành: 1 tức ác tính, 0 tức lành tính.</p>
-            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Lưu ý về NaN tức giá trị bị thiếu:  Về cách xử lí vấn đề dữ liệu bị thiếu, ta phải cân nhắc liệu rằng việc thiếu data chỉ là do sai sót trong quá trình thu thập hay thật sự nó có khả năng liên quan đến kết quả dự đoán hay không. Ví dụ trong một dự án Machine Learning dự đoán ai sẽ bầu cho ai, nguồn dữ liệu sẽ có thông tin bị trống vì khả năng người đó không bỏ phiếu. Thế nhưng, việc không bỏ phiếu của một người có khả năng mang chủ đích chính trị chứ không đơn thuần là thiếu sót ¬¬không liên quan.</p>
+            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Lưu ý về NaN tức giá trị bị thiếu:  Về cách xử lí vấn đề dữ liệu bị thiếu, <strong><i>ta phải cân nhắc liệu rằng việc thiếu data chỉ là do sai sót trong quá trình thu thập hay thật sự nó có khả năng liên quan đến kết quả dự đoán hay không</i></strong>. Ví dụ trong một dự án Machine Learning dự đoán ai sẽ bầu cho ai, nguồn dữ liệu sẽ có thông tin bị trống vì khả năng người đó không bỏ phiếu. Thế nhưng, <span id=highlight>việc không bỏ phiếu của một người có khả năng mang chủ đích chính trị (hay nói cách khác là mang tính lựa chọn) chứ không đơn thuần là thiếu sót không liên quan.</span></p>
             <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Quay lại project này, giá trị NaN đơn thuần là thiếu sót trong thu thập, nên ta sẽ thẳng tay loại bỏ các mẫu có chứa NaN.</p>
             <figure style="text-align: center"><img class="wow rollIn" src="ml_post2/step2dropna.png" height=auto width="65%"></figure>
             
-            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Sau khi loại bỏ các mẫu thiếu thông tin, ta còn 830 mẫu (ban đầu là 961 mẫu).
+            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Sau khi loại bỏ các mẫu thiếu thông tin, <span id=highlight>ta còn 830 mẫu (ban đầu là 961 mẫu).</span>
 Tiếp theo, ta phân loại bộ X, bộ Y.
 </p>
             <p id="code" class="wow fadeInUp">all_features = masses_data[['age', 'shape',
 'margin', 'density']].values<br>
 all_classes = masses_data['severity'].values
-</p>
-            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;all_features tức bộ X, lấy 4 thuộc tính: tuổi, hình dạng, rìa ngoài và mật độ.
-all_classes tức bộ Y.
+</p><br>
+            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;<span id="highlight2">all_features tức bộ X</span>, lấy 4 thuộc tính: tuổi, hình dạng, rìa ngoài và mật độ, 
+<span id="highlight2">all_classes tức bộ Y.</span>
 </p>
             <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Như vậy ta đã có 2 bộ dữ liệu X, Y để cho vào máy.<br>&nbsp;&nbsp;&nbsp;&nbsp;
-            Tuy nhiên ta thấy rằng thông tin của các thuộc tính không cùng một thước đo. Chẳng hạn “tuổi” thì từ 20 đến 100, nhưng các thuộc tính khác thì rơi vào các nhóm phân loại 1,2,3 nên ta cần phải qua một bước gọi là bình thường hoá (normalization).
-Normalization là biện pháp đưa các thông tin không cùng thước đo về cùng một giới hạn chạy từ 0 đến 1. Công thức của normalization:
+                Tuy nhiên ta thấy rằng thông tin của các thuộc tính không cùng một thước đo. Chẳng hạn “tuổi” thì chạy từ 20 đến 100, nhưng các thuộc tính khác thì rơi vào các nhóm phân loại 1,2,3 nên ta cần phải qua một bước gọi là <span id=highlight> bình thường hoá (normalization)</span>.
+                <span id="highlight2">"Normalization là biện pháp đưa các thông tin không cùng thước đo về cùng một giới hạn chạy từ 0 đến 1"</span>. Công thức của normalization:
 </p>
-            <figure style="text-align: center"><img class="wow rollIn" src="ml_post2/normalization.png" height=auto width="35%">
+            <figure style="text-align: center; border: 2px dashed black; margin: 6%;"><img class="wow rollIn" src="ml_post2/normalization.png" height=auto width="35%">
             </figure>
             <figure style="text-align: center"><img class="wow rollIn" src="ml_post2/preprocessing.png" height=auto width="75%">
             </figure>
-            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Trong project này ta sử dụng StandardScaler của thư viện sklearn. Kết quả cho về dữ liệu của bộ X đều biến thiên từ trong khoảng 0 đến 1. Xong bước bình thường hoá.
+            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Trong project này ta sử dụng <span id="highlight2">StandardScaler của thư viện sklearn</span>. Kết quả cho về dữ liệu của bộ X đều biến thiên từ trong khoảng 0 đến 1. Xong bước bình thường hoá.
 Bước cuối cùng ta tạo 2 bộ dữ liệu để train và để test theo tỉ lệ 75% train/25% test.
 </p>
              <p id="code" class="wow fadeInUp">import numpy<br>
@@ -139,7 +139,7 @@ numpy.random.seed(1234)<br>
  training_classes,
  testing_classes) = train_test_split(all_features_scaled, all_classes, train_size=0.75, random_state=1)
 
-</p>
+</p><br>
             
 <h6 class="subtittle wow fadeInLeft">V.	Bước 2: Thử các phương pháp khác nhau:</h6>
             <h5 style="margin-left: 15%;" >1.	Phương pháp Decision Tree (tham khảo ở <a href="https://heartbeat.fritz.ai/introduction-to-decision-tree-learning-cd604f85e236">đây</a>):</h5>
@@ -149,15 +149,23 @@ clf.fit(training_inputs, training_classes)
 </p>
             <figure style="text-align: center; margin: 20px;"><img class="wow rollIn" src="ml_post2/decisiontreeresult.png" height=auto width="75%">
             </figure>
-            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Độ chính xác 73%, hmmm không tệ.</p>
-            
+            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;<span id="highlight">Độ chính xác 73%</span>, hmmm không tệ.</p>
+            <br>
+            <br>
             <h5 style="margin-left: 15%;" >2. Phương pháp SVM ( <a href="https://towardsdatascience.com/support-vector-machine-introduction-to-machine-learning-algorithms-934a444fca47">Support Vector Machine</a>):</h5>
             <figure style="text-align: center"><img class="wow rollIn" src="ml_post2/svm.png" height=auto width="75%">
             </figure>
-            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;Độ chính xác 79%, khá hơn phương pháp Decision Tree.</p>
+            <p id="progtext" class="wow fadeInUp">&nbsp;&nbsp;&nbsp;&nbsp;<span id="highlight">Độ chính xác 79%</span>, khá hơn phương pháp Decision Tree.</p>
+            
+        <br>
+            <br>
             <h5 style="margin-left: 15%;" >3.	Phương pháp KNN <a href="https://towardsdatascience.com/machine-learning-basics-with-the-k-nearest-neighbors-algorithm-6a6e71d01761">(K-Nearest-Neighbors)</a>):</h5>
             <figure style="text-align: center"><img class="wow rollIn" src="ml_post2/KNN.png" height=auto width="75%">
             </figure>
+            <br>
+            <br>
+            
+            
             <h5 style="margin-left: 15%;" >4.	Phương pháp dùng Neural Network<a href="https://towardsdatascience.com/the-mostly-complete-chart-of-neural-networks-explained-3fb6f2367464">(tham khảo)</a>):</h5>
              <figure style="text-align: center"><img class="wow rollIn" src="ml_post2/neural.png" height=auto width="75%">
             </figure>

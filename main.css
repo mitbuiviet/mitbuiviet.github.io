@@ -282,3 +282,12 @@ text-underline-position: under;
     color: whitesmoke;
     
 }
+
+#highlight {
+    background: linear-gradient(to top, #e6f2ff -35%, #ffe6ff 60%);
+}
+
+#highlight2 {
+    background-color: #e8f3fd;
+    font-weight: 600;
+}
