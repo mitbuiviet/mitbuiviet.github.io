@@ -1,0 +1,114 @@
+
+body{
+    font-family: Raleway;
+    width: 100wh;
+	height: 90vh;
+	background: radial-gradient(circle, rgba(245,223,243,1) 21%, rgba(244,226,242,1) 30%, rgba(254,254,254,1) 65%, rgba(255,242,254,1) 76%, rgba(255,237,254,1) 100%, rgba(255,229,253,1) 100%);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 6s ease infinite;
+	-moz-animation: Gradient 6s ease infinite;
+	animation: Gradient 6s ease infinite;
+}
+
+.title {
+    margin: 15% 0;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.question {
+    font-weight: 200;
+    margin: 10% auto;
+    text-align: center;
+    font-size: 25px;
+}
+
+.choice {
+    text-align: center;
+    font-size: 25px;
+    padding: 2em;
+    margin: 5px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-position: under;
+    border-radius: 4px;
+}
+.left {
+    background: radial-gradient(circle, rgba(255,226,253,1) 4%, rgba(254,249,254,1) 31%, rgba(254,251,254,1) 56%, rgba(255,242,254,1) 86%);
+    background-size: 400% 400%;
+	-webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+	animation: Gradient 10s ease infinite;
+}
+.middle{
+    background: radial-gradient(circle, rgba(245,223,243,1) 4%, rgba(252,248,251,1) 46%, rgba(254,251,254,1) 58%, rgba(253,250,252,1) 60%, rgba(254,254,254,1) 65%, rgba(255,242,254,1) 89%);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+	animation: Gradient 10s ease infinite;
+}
+.right{
+   background: radial-gradient(circle, rgba(255,226,253,1) 23%, rgba(254,251,254,1) 56%, rgba(255,242,254,1) 70%);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+	animation: Gradient 10s ease infinite;
+}
+.blackhole {
+    color: white;
+    background: radial-gradient(circle, rgba(42,10,14,1) 14%, rgba(198,107,24,1) 43%, rgba(191,93,16,1) 52%, rgba(65,25,31,1) 69%, rgba(65,25,31,1) 91%);
+    background-size: 400% 400%;
+	-webkit-animation: Gradient 10s ease infinite;
+	-moz-animation: Gradient 10s ease infinite;
+	animation: Gradient 10s ease infinite;
+}
+
+.nothing{background: linear-gradient(-45deg, rgba(237,210,235,1) 0%, rgba(253,242,252,1) 54%, rgba(253,245,252,1) 62%, rgba(252,239,250,1) 77%, rgba(255,247,254,1) 88%, rgba(253,243,252,1) 96%);
+}
+.userbox {
+    margin-top: 5%;
+    text-align: center;
+    
+}
+
+.container {
+    margin: 15% auto;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
