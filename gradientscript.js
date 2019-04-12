@@ -14,8 +14,8 @@ console.log(position)})
 var btn2 = document.getElementById("btn2");
 btn2.addEventListener("click", function(){
     var input2 = document.getElementById("input2").value;
-    document.styleSheets[0].cssRules[0].style.animation=input2+"s ease 0s infinite normal none running Gradient";
-    document.styleSheets[0].cssRules[7].style.animation=input2+"s ease 0s infinite normal none running Gradient";
+    document.styleSheets[1].cssRules[0].style.animation=input2+"s ease 0s infinite normal none running Gradient";
+    document.styleSheets[1].cssRules[7].style.animation=input2+"s ease 0s infinite normal none running Gradient";
 }
                     );
 
