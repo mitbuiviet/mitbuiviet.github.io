@@ -20,6 +20,8 @@ btn2.addEventListener("click", function(){
                     );
 
 function blackholebtn(){
+    var audio=document.getElementById("myaudio");
+    audio.play();
     document.body.classList.toggle("blackhole");
 var 
 rightchoice= document.querySelectorAll("div.col.choice.right");
