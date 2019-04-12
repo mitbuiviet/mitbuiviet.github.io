@@ -58,15 +58,14 @@ body{
 }
 .blackhole {
     color: white;
-    background: radial-gradient(circle, rgba(42,10,14,1) 14%, rgba(198,107,24,1) 43%, rgba(191,93,16,1) 52%, rgba(65,25,31,1) 69%, rgba(65,25,31,1) 91%);
-    background-size: 400% 400%;
+    background: radial-gradient(circle, rgba(48,21,24,1) 4%, rgba(59,24,28,1) 10%, rgba(185,91,19,1) 13%, rgba(234,180,121,1) 18%, rgba(235,184,125,1) 20%, rgba(234,168,97,1) 25%, rgba(233,131,24,1) 30%, rgba(179,46,18,1) 37%, rgba(61,16,23,1) 49%, rgba(45,7,12,1) 63%);
+    background-size: 200% 200%;
 	-webkit-animation: Gradient 10s ease infinite;
 	-moz-animation: Gradient 10s ease infinite;
 	animation: Gradient 10s ease infinite;
 }
 
-.nothing{background: linear-gradient(-45deg, rgba(237,210,235,1) 0%, rgba(253,242,252,1) 54%, rgba(253,245,252,1) 62%, rgba(252,239,250,1) 77%, rgba(255,247,254,1) 88%, rgba(253,243,252,1) 96%);
-}
+
 .userbox {
     margin-top: 5%;
     text-align: center;
