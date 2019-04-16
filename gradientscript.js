@@ -93,7 +93,7 @@ for (var k=0; k< leftchoice.length; k++){
 
 
 function colorrefresh(){
-document.body.classList.remove("blackhole");
+if (document.body.classList.contains("blackhole")===true) {blackholebtn();};
 document.styleSheets[1].cssRules[0].style.background="linear-gradient(217deg,"+color1.value+",rgba(255,0,0,0)70.71%),linear-gradient(127deg,#C8DBAC  ,rgba(0,255,0,0) 70.71%),linear-gradient(336deg,rgba(0,0,255,0),"+color2.value+"70.71%)";
 document.styleSheets[1].cssRules[0].style.backgroundSize="400% 400%";
 document.styleSheets[1].cssRules[0].style.webkitAnimation="Gradient 6s ease infinite;";
