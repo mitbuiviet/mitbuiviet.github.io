@@ -106,5 +106,5 @@ function optional(){
   var optionbtn=document.querySelector("#optional");
   optionbtn.parentNode.removeChild(optionbtn);
 color1.addEventListener("input",colorrefresh);
-color2.addEventListener("inout",colorrefresh);
+color2.addEventListener("input",colorrefresh);
 }
