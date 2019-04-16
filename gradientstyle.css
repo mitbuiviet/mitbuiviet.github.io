@@ -4,7 +4,7 @@ body{
     width: 100wh;
 	height: 90vh;
 	background: radial-gradient(circle, rgba(245,223,243,1) 21%, rgba(244,226,242,1) 30%, rgba(254,254,254,1) 65%, rgba(255,242,254,1) 76%, rgba(255,237,254,1) 100%, rgba(255,229,253,1) 100%);
-	background-size: 400% 400%;
+    background-size: 400% 400%;
 	-webkit-animation: Gradient 6s ease infinite;
 	-moz-animation: Gradient 6s ease infinite;
 	animation: Gradient 6s ease infinite;
