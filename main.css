@@ -10,16 +10,11 @@
 }
 .greetings{
 text-align: center;
-margin-top: 0 !important;
+margin-bottom: 30px;
 padding-bottom: 10px;
-color: whitesmoke;
+color: black;;
 font-size: 130%;
 font-family:Ubuntu, serif;
-background: linear-gradient(0.1turn, #92919A, #a6a6a6, #d9d9d9);
-background-size: 400% 400%;
--webkit-animation: Gradient 10s ease infinite;
--moz-animation: Gradient 10s ease infinite;
-animation: Gradient 10s ease infinite;
 }
 @-webkit-keyframes Gradient {
 	0% {
@@ -65,11 +60,10 @@ animation: Gradient 10s ease infinite;
 }
 
 .webtitle {
+margin-top: 40px;
 text-align: right;
 padding-bottom: 10%;
-font-size: 130%;
-color: white;
-
+font-family: ubuntu;
 }
 
 .indexcontainer{
@@ -125,11 +119,11 @@ border-radius: 5px;
 
 #styletext {
 color:black;
-text-decoration: underline;
-text-decoration-color: red;
-font-size: 135%;
+text-decoration: none;
+border-bottom: 4px solid red;
+font-size: 140%;
 font-family: Ubuntu;
-text-underline-position: under;
+
 }
 .postname #styletext{
 padding-left: 60%;
