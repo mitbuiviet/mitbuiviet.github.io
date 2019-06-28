@@ -86,14 +86,10 @@ font-family: ubuntu;
 
 
 
-.register{
-text-align: center;
-justify-content: center;
-display: inline-block;
+.registerbox{
 width: 100%;
-
-padding: 0 20px 40px 20px;
-
+background-color:#2f3336;
+color: white;
 }
 
 input[type=submit]{
@@ -276,13 +272,13 @@ text-underline-position: under;
 
 #aboutavatar{
     padding: 10px;
-    
 }
 #avatar2 {
-    width: 60%;
-    height: 90%;
+    
     border-radius: 50%;
     margin: 5%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 
@@ -324,3 +320,5 @@ text-underline-position: under;
     background-color: #e8f3fd;
     font-weight: 600;
 }
+
+

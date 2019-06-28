@@ -1,3 +1,5 @@
+var _ = require("lodash");
+
 var input= document.getElementById("userInput");
 var choices = window.document.querySelector(".choices");
 
@@ -7,16 +9,16 @@ var choices = window.document.querySelector(".choices");
 function addchoice() {
 if (input.value.length>0) {
 
-var newdiv = window.document.createElement("div"); 
-newdiv.classList.add("choice","col"); 
+var newdiv = window.document.createElement("div");
+newdiv.classList.add("choice","col");
 if (document.body.classList.contains("blackhole")===true) {newdiv.classList.add("blackhole")};
 var positionList = ["right", "middle","left"] ;
 var position = positionList[Math.floor(Math.random() * positionList.length)];
-newdiv.classList.add(position);  
+newdiv.classList.add(position);
 var p = window.document.createElement("p"); p.appendChild(window.document.createTextNode(input.value));
 newdiv.appendChild(p);
 choices.appendChild(newdiv);
-newdiv.addEventListener("click",function(){newdiv.parentNode.removeChild(newdiv)});    
+newdiv.addEventListener("click",function(){newdiv.parentNode.removeChild(newdiv)});
 input.value = ""
 }}
 
@@ -31,7 +33,7 @@ var btn = window.document.querySelector("#input");
 
 btn.addEventListener("click", function () {
 addchoice()} );
-    
+
 input.addEventListener("keypress", function(event){
     if (event.which===13){addchoice()}
 })
@@ -43,7 +45,7 @@ input2.addEventListener("change",function(){
     document.styleSheets[1].cssRules[0].style.animation=input2.value+"s ease 0s infinite normal none running Gradient";
     document.styleSheets[1].cssRules[7].style.animation=input2.value+"s ease 0s infinite normal none running Gradient";}
 )
-    
+
 
 
 
@@ -53,13 +55,13 @@ function blackholebtn(){
     var audio=document.getElementById("myaudio");
     audio.play();
     document.body.classList.toggle("blackhole");
-var 
+var
 rightchoice= document.querySelectorAll("div.col.choice.right");
-    
-var 
+
+var
 middlechoice=
 document.querySelectorAll("div.col.choice.middle");
-    
+
 var
 leftchoice=
 document.querySelectorAll("div.col.choice.left");
@@ -70,7 +72,7 @@ for (var i=0; i< rightchoice.length; i++) {
 };
 for (var j=0; j< middlechoice.length; j++){
     middlechoice[j].classList.toggle("blackhole");
-   
+
 };
 for (var k=0; k< leftchoice.length; k++){
     leftchoice[k].classList.toggle("blackhole");
@@ -87,7 +89,7 @@ for (var k=0; k< leftchoice.length; k++){
     color2.setAttribute("type","color");
     color2.setAttribute("id","color2");
     color2.setAttribute("value","#50C1D8");
-    var buttonbox=document.querySelector(".buttonbox"); 
+    var buttonbox=document.querySelector(".buttonbox");
 
 
 
